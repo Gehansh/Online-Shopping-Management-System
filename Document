@@ -1,4 +1,10 @@
 /*
+MYSQL Commands
+
+For creating Database
+create database shopping;
+use shopping;
+
 For creating the Product Table-
 
 create table products (
