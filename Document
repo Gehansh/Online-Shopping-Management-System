@@ -1,0 +1,23 @@
+/*
+For creating the Product Table-
+
+create table products (
+product_id int not null, 
+product_name varchar(100),
+product_price int, 
+primary key(product_id)
+);
+
+Inserting some Sample Products-
+
+insert into products values(1,'Mobile',40000);
+insert into products values(2,'Laptop',90000);
+insert into products values(3,'TV',50000);
+insert into products values(4,'Fridge',80000);
+
+Check Table by -
+ select * from products;
+
+*/
+
+
