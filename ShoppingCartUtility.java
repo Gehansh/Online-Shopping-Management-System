@@ -11,13 +11,16 @@ public class ShoppingCartUtility {
         System.out.println(product.getName()+" $"+product.getPrice() + " added to cart.");
     }
 
-    public void removeFromCart(Product product) {
-        if (cartItems.contains(product)) {
-            cartItems.remove(product);
-            System.out.println(product.getName() + " removed from cart.");
-        } else {
-            System.out.println(product.getName() + " is not in the cart.");
-        }
+   public void removeFromCart(Product product) {
+    	 System.out.println(cartItems+"  "+product);
+    	 for(Product p:cartItems) {
+    		 if(p.getId()==product.getId()) {
+    			 cartItems.remove(p);
+    			 System.out.println(product.getName() + " removed from cart.");
+    			 return ;
+    		 }
+    	 }
+    	 System.out.println(product.getName() + " is not in the cart.");
     }
 
     public void viewCart() {
